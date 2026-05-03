@@ -1,0 +1,32 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Your Name"
+  favicon: favicon.ico
+  navbar:
+    background: "#0a0a0f"
+    foreground: "#ffffff"
+    logo: ""
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Charts"
+        href: chart/index.qmd
+      - text: "Dashboards"
+        href: db/index.qmd
+      - text: "Stories"
+        href: blog/index.qmd
+      - text: "Contact"
+        href: about.qmd
+  page-footer:
+    background: "#0a0a0f"
+    center: "© 2025 Your Name"
+
+format:
+  html:
+    theme: [darkly, custom.scss]
+    css: styles.css
+    toc: false
+    page-layout: full

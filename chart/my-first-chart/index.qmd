@@ -1,0 +1,47 @@
+---
+title: "My First Chart"
+date: 2025-05-01
+categories: [R, TidyTuesday]
+image: thumbnail.png
+description: "A brief description of what this chart shows."
+---
+
+Write your analysis or context here. This text appears on the individual chart page.
+
+```{r}
+#| label: my-chart
+#| echo: false
+#| fig-width: 10
+#| fig-height: 6
+
+library(ggplot2)
+
+# Replace this with your actual visualization code
+ggplot(mtcars, aes(x = wt, y = mpg, color = factor(cyl))) +
+  geom_point(size = 3, alpha = 0.8) +
+  scale_color_manual(values = c("#a78bfa", "#34d399", "#fbbf24")) +
+  labs(
+    title = "My First Chart",
+    subtitle = "A subtitle explaining the data",
+    x = "Weight", y = "Miles per gallon",
+    color = "Cylinders"
+  ) +
+  theme_minimal(base_size = 14) +
+  theme(
+    plot.background = element_rect(fill = "#0a0a0f", color = NA),
+    panel.background = element_rect(fill = "#0a0a0f", color = NA),
+    panel.grid = element_line(color = "#1e1e2e"),
+    text = element_text(color = "#e8e8e8"),
+    axis.text = element_text(color = "#888899"),
+    plot.title = element_text(color = "#ffffff", size = 16),
+    plot.subtitle = element_text(color = "#888899", size = 12),
+    legend.background = element_rect(fill = "#0a0a0f"),
+    legend.text = element_text(color = "#e8e8e8")
+  )
+```
+
+## About this chart
+
+Explain your methodology, data source, or any interesting findings here.
+
+**Data source:** [Your source here](https://example.com)

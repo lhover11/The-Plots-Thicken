@@ -1,0 +1,13 @@
+---
+title: "Charts"
+listing:
+  contents: .
+  type: grid
+  grid-columns: 3
+  sort: "date desc"
+  categories: true
+  fields: [image, title, date, categories]
+  exclude:
+    title: "Charts"
+page-layout: full
+---

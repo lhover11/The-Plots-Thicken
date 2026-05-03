@@ -1,0 +1,17 @@
+{
+  "hash": "c5c7c9f915eb50203a00973e824a8775",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"My First Chart\"\ndate: 2025-05-01\ncategories: [R, TidyTuesday]\nimage: thumbnail.png\ndescription: \"A brief description of what this chart shows.\"\n---\n\nWrite your analysis or context here. This text appears on the individual chart page.\n\n\n::: {.cell}\n::: {.cell-output .cell-output-stderr}\n\n```\nWarning: package 'ggplot2' was built under R version 4.4.3\n```\n\n\n:::\n\n::: {.cell-output-display}\n![](index_files/figure-html/my-chart-1.png){width=960}\n:::\n:::\n\n\n## About this chart\n\nExplain your methodology, data source, or any interesting findings here.\n\n**Data source:** [Your source here](https://example.com)\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

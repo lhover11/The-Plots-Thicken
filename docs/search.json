@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "\n    DataStories\n  ",
+    "section": "",
+    "text": "Data Visualization Portfolio\n  \n    DataStories\n  \n  \n    Exploring patterns, trends, and insights through thoughtful visualization — built with R, Python, and D3.\n  \n  View the work\n\n\n\n  What's here\n  Three ways to explore\n\n  \n\n    \n      01\n      Charts\n      Static and interactive charts exploring data across topics.\n    \n\n    \n      02\n      Dashboards\n      Multi-panel interactive dashboards for deeper exploration.\n    \n\n    \n      03\n      Stories\n      Written narratives combining data analysis with context."
+  },
+  {
+    "objectID": "chart/my-first-chart/index.html",
+    "href": "chart/my-first-chart/index.html",
+    "title": "My First Chart",
+    "section": "",
+    "text": "Write your analysis or context here. This text appears on the individual chart page.\nWarning: package 'ggplot2' was built under R version 4.4.3"
+  },
+  {
+    "objectID": "chart/my-first-chart/index.html#about-this-chart",
+    "href": "chart/my-first-chart/index.html#about-this-chart",
+    "title": "My First Chart",
+    "section": "About this chart",
+    "text": "About this chart\nExplain your methodology, data source, or any interesting findings here.\nData source: Your source here"
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Stories",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Contact",
+    "section": "",
+    "text": "I'm a data visualization practitioner who uses R, Python, and D3 to find and communicate stories in data. Get in touch if you'd like to collaborate or just talk charts.\n  \n  \n    \n      Email\n      you@example.com\n    \n    \n      GitHub\n      github.com/yourusername\n    \n    \n      LinkedIn\n      linkedin.com/in/yourprofile"
+  },
+  {
+    "objectID": "chart/index.html",
+    "href": "chart/index.html",
+    "title": "Charts",
+    "section": "",
+    "text": "My First Chart\n\n\n\nR\n\nTidyTuesday\n\n\n\n\nMay 1, 2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "db/index.html",
+    "href": "db/index.html",
+    "title": "Dashboards",
+    "section": "",
+    "text": "No matching items"
+  }
+]

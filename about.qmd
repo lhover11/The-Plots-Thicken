@@ -1,0 +1,26 @@
+---
+title: "Contact"
+page-layout: article
+---
+
+```{=html}
+<div style="max-width: 540px; padding: 2rem 0;">
+  <p style="font-size: 0.82rem; color: rgba(255,255,255,0.4); line-height: 1.8; margin-bottom: 2rem;">
+    I'm a data visualization practitioner who uses R, Python, and D3 to find and communicate stories in data. Get in touch if you'd like to collaborate or just talk charts.
+  </p>
+  <div class="contact-links" style="display: flex; flex-direction: column; gap: 0.75rem;">
+    <div style="display: flex; gap: 1rem; align-items: center; font-size: 0.82rem;">
+      <span style="color: rgba(255,255,255,0.25); width: 80px; font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase;">Email</span>
+      <a href="mailto:you@example.com">you@example.com</a>
+    </div>
+    <div style="display: flex; gap: 1rem; align-items: center; font-size: 0.82rem;">
+      <span style="color: rgba(255,255,255,0.25); width: 80px; font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase;">GitHub</span>
+      <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a>
+    </div>
+    <div style="display: flex; gap: 1rem; align-items: center; font-size: 0.82rem;">
+      <span style="color: rgba(255,255,255,0.25); width: 80px; font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase;">LinkedIn</span>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a>
+    </div>
+  </div>
+</div>
+```
