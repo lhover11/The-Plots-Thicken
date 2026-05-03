@@ -1,12 +1,6 @@
 {
   "listingMap": {
-    "blog\\index.qmd": [
-      "."
-    ],
-    "chart\\index.qmd": [
-      "."
-    ],
-    "db\\index.qmd": [
+    "plots\\index.qmd": [
       "."
     ]
   }

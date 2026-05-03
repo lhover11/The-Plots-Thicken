@@ -1,5 +1,5 @@
 ---
-title: "Dashboards"
+title: "Plots"
 listing:
   contents: .
   type: grid
@@ -8,6 +8,6 @@ listing:
   categories: true
   fields: [image, title, date, categories]
   exclude:
-    title: "Dashboards"
+    title: "Plots"
 page-layout: full
 ---

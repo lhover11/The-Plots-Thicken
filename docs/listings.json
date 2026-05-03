@@ -1,16 +1,8 @@
 [
   {
-    "listing": "/blog/index.html",
-    "items": []
-  },
-  {
-    "listing": "/chart/index.html",
+    "listing": "/plots/index.html",
     "items": [
-      "/chart/my-first-chart/index.html"
+      "/plots/my-first-chart/index.html"
     ]
-  },
-  {
-    "listing": "/db/index.html",
-    "items": []
   }
 ]

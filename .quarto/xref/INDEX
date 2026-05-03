@@ -16,5 +16,11 @@
   },
   "index.qmd": {
     "index.html": "21e38279"
+  },
+  "plots/index.qmd": {
+    "index.html": "8fa58183"
+  },
+  "plots/my-first-chart/index.qmd": {
+    "index.html": "c3241efb"
   }
 }
