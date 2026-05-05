@@ -137,13 +137,11 @@ body {
   transform: translateY(-2px);
 }
 .card-img-top {
-  width: 100%;
-  aspect-ratio: 16 / 10;
-  object-fit: cover;
-  border-bottom: 0.5px solid rgba(255,255,255,0.06);
-  filter: brightness(0.9);
-  transition: filter 0.2s;
+  aspect-ratio: 4 / 5;
+  object-fit: contain !important;
+  background: #0a0a0f;
 }
+
 .card:hover .card-img-top {
   filter: brightness(1.05);
 }
@@ -171,6 +169,7 @@ body {
   background: rgba(167,139,250,0.07);
   margin-right: 4px;
 }
+
 
 /* ── Listing page header ── */
 #quarto-content h1.title {
