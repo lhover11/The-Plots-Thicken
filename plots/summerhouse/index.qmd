@@ -3,9 +3,18 @@ title: "Summer House Scandal"
 date: 2025-05-01
 categories: [R, TidyTuesday]
 image: SH_scandal.png
-description: "A brief description of what this chart shows."
+description: "Off-screen drama causes big spike in views"
 ---
 
+![](SH_scandal.png)
+
+## About this plot
+
+Your methodology and findings here.
+
+**Data source:** [Google Trends](https://trends.google.com)
+
+## Code
 
 ```{r}
 #| eval: false
@@ -85,8 +94,3 @@ ggsave("../data-final/summer_house_trend_2026.png", width = 9, height = 11.25, d
 
 ```
 
-## About this chart
-
-Explain your methodology, data source, or any interesting findings here.
-
-**Data source:** [Your source here](https://example.com)
