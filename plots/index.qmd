@@ -1,7 +1,7 @@
 ---
 title: "Plots"
 listing:
-  contents: "*"
+  contents: "*/index.qmd"
   type: grid
   grid-columns: 3
   sort: "date desc"
