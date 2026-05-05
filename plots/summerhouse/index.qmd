@@ -6,11 +6,11 @@ image: SH_scandal.png
 description: "Off-screen drama causes big spike in views"
 ---
 
-![](SH_scandal.png)
+![](SH_scandal.png){.lightbox width="50%"}
 
-## About this plot
+## About
 
-Your methodology and findings here.
+The S10 premiere brought a bump in interest, but it was the off-screen drama that broke the internet.  Once Amanda and West went public, search interest surged and the leaked reunion audio kept it going.
 
 **Data source:** [Google Trends](https://trends.google.com)
 
