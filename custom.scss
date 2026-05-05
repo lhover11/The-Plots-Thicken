@@ -139,17 +139,24 @@ body {
 
 .card-img-top {
   width: 100%;
-  aspect-ratio: 4 / 5 !important;
-  object-fit: cover !important;
-  object-position: top !important;
+  height: auto !important;
+  aspect-ratio: unset !important;
+  object-fit: unset !important;
+}
+
+.card {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.card-body {
+  flex-shrink: 0;
 }
 
 .card:hover .card-img-top {
   filter: brightness(1.05);
 }
-.card-body {
-  padding: 1rem 1.1rem 1.2rem !important;
-}
+
 .card-title {
   font-size: 0.88rem !important;
   font-weight: 500 !important;
