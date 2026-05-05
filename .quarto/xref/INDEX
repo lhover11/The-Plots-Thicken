@@ -22,5 +22,8 @@
   },
   "plots/my-first-chart/index.qmd": {
     "index.html": "c3241efb"
+  },
+  "plots/summerhouse/index.qmd": {
+    "index.html": "aa0a2718"
   }
 }

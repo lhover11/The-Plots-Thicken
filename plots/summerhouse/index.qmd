@@ -1,0 +1,92 @@
+---
+title: "Summer House Scandal"
+date: 2025-05-01
+categories: [R, TidyTuesday]
+image: SH_scandal.png
+description: "A brief description of what this chart shows."
+---
+
+
+```{r}
+#| eval: false
+
+library(ggplot2)
+library(showtext)
+library(data.table)
+library(tidyverse)
+
+# Load a script font similar to the Summer House logo
+font_add_google("Dancing Script", "dancing")  # closest free Google Font
+font_add_google("Montserrat", "montserrat")
+showtext_auto()
+
+# Summer House color palette
+sh_bg       <- "#0a1f2e"   # deep teal-navy (dark pool water)
+sh_line     <- "#3ecfcf"   # teal/cyan (pool water)
+sh_fill     <- "#3ecfcf"
+sh_ep       <- "#f5a623"   # orange (Bravo bubble)
+sh_rumor    <- "#e8307a"   # hot pink
+sh_confirm  <- "#e8307a"   # hot pink
+sh_text     <- "#ffffff"
+sh_muted    <- "#7ab8bb"
+
+# Data
+df_path <- "../data-raw/summer_house_trends_2026.csv"
+
+df <- fread(df_path, skip = 2)
+
+# make week in date format
+df <- df %>% mutate(Day = as.Date(Day, format = "%m/%d/%Y"))
+
+names(df) <- c("date", "interest")
+
+events <- data.frame(
+  date  = as.Date(c("2026-02-03", "2026-03-05", "2026-03-31", "2026-04-24")),
+  label = c("S10E1", "Rumors", "Confirm", "Reunion Audio"),
+  color = c("#f5a623", "#e8307a", "#e8307a", "#e8307a")
+)
+
+
+df_events <- merge(df, events, by = "date")
+
+ggplot(df, aes(x = date, y = interest)) +
+  #geom_area(fill = sh_fill, alpha = 0.12) +
+  geom_line(color = sh_line, linewidth = 1.5) +
+  geom_point(data = df_events,
+             aes(x = date, y = interest, color = color), size = 6) +
+  scale_color_identity() +
+  scale_x_date(date_breaks = "1 month", date_labels = "%b") +
+  scale_y_continuous(limits = c(0, 101), breaks = c(0, 25, 50, 75, 100)) +
+  labs(
+    title    = "",
+    # subtitle = "Google Search Interest  ·  Jan 2025–Apr 2026",
+    x        = NULL,
+    y        = "Search Interest",
+    caption  = "Source: Google Trends  |  @the_plots_thicken"
+  ) +
+  theme_minimal(base_family = "montserrat", base_size = 34) +
+  theme(
+    plot.background   = element_rect(fill = sh_bg, color = NA),
+    panel.background  = element_rect(fill = sh_bg, color = NA),
+    panel.grid.major  = element_line(color = "#ffffff12"),
+    panel.grid.minor  = element_blank(),
+    plot.title        = element_text(color = sh_text, size = 28, face = "bold",
+                                     margin = margin(b = 4)),
+    #plot.subtitle     = element_text(color = sh_muted, size = 13),
+    plot.caption      = element_text(color = "#4a7a7d", size = 28),
+    axis.text         = element_text(color = sh_muted, size = 32),
+    axis.title.y      = element_text(color = "#4a7a7d", size = 32),
+    axis.title.x      = element_text(color = "#4a7a7d", size = 32),
+    plot.margin       = margin(24, 24, 24, 24)
+  )
+
+# Portrait Instagram: 1080 x 1350px = 9 x 11.25 inches at 120dpi
+ggsave("../data-final/summer_house_trend_2026.png", width = 9, height = 11.25, dpi = 120, bg = sh_bg)
+
+```
+
+## About this chart
+
+Explain your methodology, data source, or any interesting findings here.
+
+**Data source:** [Your source here](https://example.com)
