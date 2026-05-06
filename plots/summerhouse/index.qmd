@@ -2,7 +2,7 @@
 title: "Summer House Scandal"
 date: 2026-05-01
 categories: [R, BravoTV, Drama]
-image: SH_scandal.png
+image: thumbnail.png
 description: "Off-screen drama causes big spike in views"
 ---
 

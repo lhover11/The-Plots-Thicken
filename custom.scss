@@ -139,9 +139,9 @@ body {
 
 .card-img-top {
   width: 100%;
-  aspect-ratio: 3 / 4 !important;
-  object-fit: cover !important;
-  object-position: top !important;
+  height: auto !important;
+  aspect-ratio: unset !important;
+  object-fit: unset !important;
 }
 
 .card {
