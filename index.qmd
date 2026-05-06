@@ -19,12 +19,12 @@ page-layout: full
   <p class="section-label">What's here</p>
   <h2 class="section-title">The collection</h2>
 
-  <div style="display: grid; grid-template-columns: 1fr; gap: 1px; background: rgba(255,255,255,0.06); border: 0.5px solid rgba(255,255,255,0.06);">
+  <div style="display: grid; grid-template-columns: 1fr; gap: 1px; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 24px rgba(194,80,122,0.12);">
 
-    <a href="plots/index.html" style="text-decoration:none; display:block; padding: 2.5rem 2rem; background: #0a0a0f; transition: background 0.2s;" onmouseover="this.style.background='#111118'" onmouseout="this.style.background='#0a0a0f'">
-      <div style="font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.25); margin-bottom: 0.75rem;">01</div>
-      <div style="font-family: 'DM Serif Display', serif; font-size: 1.5rem; color: #fff; margin-bottom: 0.75rem;">Plots</div>
-      <div style="font-size: 0.82rem; color: rgba(255,255,255,0.35); line-height: 1.7;">All the plots — browse the full collection.</div>
+    <a href="plots/index.html" style="text-decoration:none; display:block; padding: 2.5rem 2rem; background: linear-gradient(135deg, #fce8f3, #ede8ff, #e8f0ff); border-radius: 16px; transition: box-shadow 0.2s;" onmouseover="this.style.boxShadow='0 8px 32px rgba(194,80,122,0.2)'" onmouseout="this.style.boxShadow='none'">
+      <div style="font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(194,80,122,0.6); margin-bottom: 0.75rem;">01</div>
+      <div style="font-family: 'DM Serif Display', serif; font-size: 1.5rem; color: #3d2645; margin-bottom: 0.75rem;">Plots</div>
+      <div style="font-size: 0.82rem; color: rgba(61,38,69,0.5); line-height: 1.7;">All the plots — browse the full collection.</div>
     </a>
 
   </div>
