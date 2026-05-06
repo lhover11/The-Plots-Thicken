@@ -1,7 +1,7 @@
 ---
 title: "Summer House Scandal"
-date: 2025-05-01
-categories: [R, TidyTuesday]
+date: 2026-05-01
+categories: [R, BravoTV, Drama]
 image: SH_scandal.png
 description: "Off-screen drama causes big spike in views"
 ---

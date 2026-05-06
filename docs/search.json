@@ -1,5 +1,40 @@
 [
   {
+    "objectID": "plots/tt-palmtrees/index.html#about",
+    "href": "plots/tt-palmtrees/index.html#about",
+    "title": "Palm Tree Leaves",
+    "section": "About",
+    "text": "About\nTidyTuesday post Plot explores max number of leaves by Palm subfamily. Some trees have &gt; 50 leaves, that’s a lot of leaves!\nData source: palmtrees R package"
+  },
+  {
+    "objectID": "plots/tt-palmtrees/index.html#code",
+    "href": "plots/tt-palmtrees/index.html#code",
+    "title": "Palm Tree Leaves",
+    "section": "Code",
+    "text": "Code\n\n# Week 11 TidyTuesday\n\n# Load necessary libraries\nlibrary(ggplot2)\nlibrary(dplyr)\nlibrary(readr)\nlibrary(tidyr)\nlibrary(readxl)\nlibrary(ggpubr)\nlibrary(showtext)\nlibrary(ggtext)\nlibrary(grid)\n\n\n# Parameters\n\n# Theme for plots\nmy_theme &lt;- function() {\n  theme_minimal(base_size = 24) +\n    theme(\n      panel.grid.major.y = element_blank(),  # Remove horizontal gridlines\n      panel.grid.major.x = element_blank(),  # Remove vertical grid lines\n      panel.border = element_blank(),  # Remove panel border\n      axis.text = element_text(size = 26, color = \"black\", family = my_font),\n      # axis.text.x = element_text(size = 22, color = \"black\"),  # Bold x-axis labels\n      # axis.text.y = element_text(size = 22, color = \"black\"),  # Readable y-axis labels\n      axis.title = element_text(size = 30, face = \"bold\", family = my_font),  # Bold axis titles\n      plot.title = element_text(size = 44, face = \"bold\", hjust = 0.5, family = my_font, color = \"#0B6E4F\"),  # Centered, bold title\n      legend.position = \"none\",  # no legend\n      # legend.title = element_text(size = 14, face = \"bold\"),  # Bold legend title\n      # legend.text = element_text(size = 14),  # Readable legend labels\n      plot.caption = element_markdown(hjust= 0, margin=margin(10,0,0,0), size=16, color=\"black\", lineheight = 1.2),\n      panel.grid = element_line(color = alpha(\"black\", 0.4)),\n      # Set background color\n      plot.background = element_rect(fill = \"ivory\", color = NA),  \n      panel.background = element_rect(fill = \"ivory\", color = NA)  \n    )\n}\n\n\n# Add cool fonts to use in plots\nfont_add_google(\"Quicksand\", \"quicksand\")\nmy_font &lt;- \"quicksand\"\nshowtext_auto()\n\n# Import font awesome to use icons\nfont_add('fa-reg', '../../fontawesome/otfs/Font Awesome 6 Free-Regular-400.otf')\nfont_add('fa-brands', '../../fontawesome/otfs/Font Awesome 6 Brands-Regular-400.otf')\nfont_add('fa-solid', '../../fontawesome/otfs/Font Awesome 6 Free-Solid-900.otf')\n\n\n# Custom color palette\n# green_cols &lt;- rev(c(\"#344E41\",\"#3A5A40\", \"#588157\", \"#5A9F68\"))\ngreen_cols &lt;- rev(c(\"#073B3A\", \"#0B6E4F\", \"#08A045\", \"#6BBF59\"))\n\n\n# Read in data:\ndata &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2025/2025-03-18/palmtrees.csv')\nhead(data)\n\n# Look at data\n## How many palm tribes and subfamilies are there?\nhead(data)\nunique(data$acc_genus) # &gt; 180 genus\nunique(data$palm_tribe)  # &gt; 20\nunique(data$palm_subfamily) # 5 subfamilies\n\n\n# Let's look at the number of leaves per subfamily\n\n# summarize max number of leaves per subfamily\nmed_leaves &lt;- data %&gt;%\n  group_by(palm_subfamily) %&gt;%\n  summarize(med_leaves = median(max_leaf_number, na.rm = TRUE),\n            total_trees = n())\n\n# create order for plot based on median\norder &lt;- med_leaves %&gt;% arrange(med_leaves) %&gt;% pull(palm_subfamily)\ndata$palm_subfamily &lt;- factor(data$palm_subfamily, levels = order)\n\n# remove Nypoideae subfamily, only 1 data point\ndata &lt;- data %&gt;%\n  filter(palm_subfamily != \"Nypoideae\")\n\n\n# Plot data\nggplot(data, aes(palm_subfamily, max_leaf_number,\n                 fill = palm_subfamily, color = palm_subfamily)) +\n  geom_boxplot(alpha = 0.3, width = 0.5, outlier.shape = NA) +\n  geom_jitter(width=0.15, alpha=0.8)+\n  scale_fill_manual(values = green_cols) +\n  scale_color_manual(values = green_cols) +\n  labs(x = \"Palm Subfamily\", \n       y = \"Max Leaf Number\",\n       title = \"Max Leaf Number by Palm Subfamily\",\n       caption = caption) +\n  my_theme()\n\nggsave(\"../results/palm_trees_max_leaves.png\", w = 4.5, h = 4)"
+  },
+  {
+    "objectID": "plots/index.html",
+    "href": "plots/index.html",
+    "title": "Plots",
+    "section": "",
+    "text": "Summer House Scandal\n\n\n\nR\n\nBravoTV\n\nDrama\n\n\n\n\nMay 1, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nPalm Tree Leaves\n\n\n\nR\n\nTidyTuesday\n\n\n\n\nMar 21, 2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Contact",
+    "section": "",
+    "text": "I'm a data visualization practitioner who uses R, Python, and D3 to find and communicate stories in data. Get in touch if you'd like to collaborate or just talk charts.\n  \n  \n    \n      Email\n      you@example.com\n    \n    \n      GitHub\n      github.com/yourusername\n    \n    \n      LinkedIn\n      linkedin.com/in/yourprofile"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "\n    The PlotsThicken\n  ",
+    "section": "",
+    "text": "Data Visualization Portfolio\n  \n    The PlotsThicken\n  \n  \n    Plotting everyday drama and data\n  \n  View the plots\n\n\n\n  What's here\n  The collection\n\n  \n\n    \n      01\n      Plots\n      All the plots — browse the full collection."
+  },
+  {
     "objectID": "plots/summerhouse/index.html#about",
     "href": "plots/summerhouse/index.html#about",
     "title": "Summer House Scandal",
@@ -12,26 +47,5 @@
     "title": "Summer House Scandal",
     "section": "Code",
     "text": "Code\n\nlibrary(ggplot2)\nlibrary(showtext)\nlibrary(data.table)\nlibrary(tidyverse)\n\n# Load a script font similar to the Summer House logo\nfont_add_google(\"Dancing Script\", \"dancing\")  # closest free Google Font\nfont_add_google(\"Montserrat\", \"montserrat\")\nshowtext_auto()\n\n# Summer House color palette\nsh_bg       &lt;- \"#0a1f2e\"   # deep teal-navy (dark pool water)\nsh_line     &lt;- \"#3ecfcf\"   # teal/cyan (pool water)\nsh_fill     &lt;- \"#3ecfcf\"\nsh_ep       &lt;- \"#f5a623\"   # orange (Bravo bubble)\nsh_rumor    &lt;- \"#e8307a\"   # hot pink\nsh_confirm  &lt;- \"#e8307a\"   # hot pink\nsh_text     &lt;- \"#ffffff\"\nsh_muted    &lt;- \"#7ab8bb\"\n\n# Data\ndf_path &lt;- \"../data-raw/summer_house_trends_2026.csv\"\n\ndf &lt;- fread(df_path, skip = 2)\n\n# make week in date format\ndf &lt;- df %&gt;% mutate(Day = as.Date(Day, format = \"%m/%d/%Y\"))\n\nnames(df) &lt;- c(\"date\", \"interest\")\n\nevents &lt;- data.frame(\n  date  = as.Date(c(\"2026-02-03\", \"2026-03-05\", \"2026-03-31\", \"2026-04-24\")),\n  label = c(\"S10E1\", \"Rumors\", \"Confirm\", \"Reunion Audio\"),\n  color = c(\"#f5a623\", \"#e8307a\", \"#e8307a\", \"#e8307a\")\n)\n\n\ndf_events &lt;- merge(df, events, by = \"date\")\n\nggplot(df, aes(x = date, y = interest)) +\n  #geom_area(fill = sh_fill, alpha = 0.12) +\n  geom_line(color = sh_line, linewidth = 1.5) +\n  geom_point(data = df_events,\n             aes(x = date, y = interest, color = color), size = 6) +\n  scale_color_identity() +\n  scale_x_date(date_breaks = \"1 month\", date_labels = \"%b\") +\n  scale_y_continuous(limits = c(0, 101), breaks = c(0, 25, 50, 75, 100)) +\n  labs(\n    title    = \"\",\n    # subtitle = \"Google Search Interest  ·  Jan 2025–Apr 2026\",\n    x        = NULL,\n    y        = \"Search Interest\",\n    caption  = \"Source: Google Trends  |  @the_plots_thicken\"\n  ) +\n  theme_minimal(base_family = \"montserrat\", base_size = 34) +\n  theme(\n    plot.background   = element_rect(fill = sh_bg, color = NA),\n    panel.background  = element_rect(fill = sh_bg, color = NA),\n    panel.grid.major  = element_line(color = \"#ffffff12\"),\n    panel.grid.minor  = element_blank(),\n    plot.title        = element_text(color = sh_text, size = 28, face = \"bold\",\n                                     margin = margin(b = 4)),\n    #plot.subtitle     = element_text(color = sh_muted, size = 13),\n    plot.caption      = element_text(color = \"#4a7a7d\", size = 28),\n    axis.text         = element_text(color = sh_muted, size = 32),\n    axis.title.y      = element_text(color = \"#4a7a7d\", size = 32),\n    axis.title.x      = element_text(color = \"#4a7a7d\", size = 32),\n    plot.margin       = margin(24, 24, 24, 24)\n  )\n\n# Portrait Instagram: 1080 x 1350px = 9 x 11.25 inches at 120dpi\nggsave(\"../data-final/summer_house_trend_2026.png\", width = 9, height = 11.25, dpi = 120, bg = sh_bg)"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "\n    The PlotsThicken\n  ",
-    "section": "",
-    "text": "Data Visualization Portfolio\n  \n    The PlotsThicken\n  \n  \n    Plotting everyday drama and data\n  \n  View the plots\n\n\n\n  What's here\n  The collection\n\n  \n\n    \n      01\n      Plots\n      All the plots — browse the full collection."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Contact",
-    "section": "",
-    "text": "I'm a data visualization practitioner who uses R, Python, and D3 to find and communicate stories in data. Get in touch if you'd like to collaborate or just talk charts.\n  \n  \n    \n      Email\n      you@example.com\n    \n    \n      GitHub\n      github.com/yourusername\n    \n    \n      LinkedIn\n      linkedin.com/in/yourprofile"
-  },
-  {
-    "objectID": "plots/index.html",
-    "href": "plots/index.html",
-    "title": "Plots",
-    "section": "",
-    "text": "Summer House Scandal\n\n\n\nR\n\nTidyTuesday\n\n\n\n\nMay 1, 2025\n\n\n\n\n\n\nNo matching items"
   }
 ]
