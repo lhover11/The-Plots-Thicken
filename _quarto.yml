@@ -22,7 +22,7 @@ website:
 
 format:
   html:
-    theme: [darkly, custom.scss]
+    theme: [flatly, custom.scss]
     css: styles.css
     toc: false
     page-layout: full
