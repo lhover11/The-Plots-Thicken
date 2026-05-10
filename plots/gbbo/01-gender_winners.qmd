@@ -1,7 +1,7 @@
 ---
 title: "GBBO Winners"
 date: 2024-09-30
-categories: [GBBO, Infographic]
+categories: [GBBO]
 image: images/GBBO_Gender_Barplot.png
 description: "Comparison of GBBO winners by gender"
 ---

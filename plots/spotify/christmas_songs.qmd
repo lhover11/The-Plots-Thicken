@@ -1,7 +1,7 @@
 ---
 title: "Most streamed Christmas songs"
 date: 2024-12-08
-categories: [Data is Everywhere]
+categories: [Data is everywhere]
 image: images/top_10_spotify_2024_1-5.png
 description: "Top 10 most streamed Christmas songs on Spotify"
 ---

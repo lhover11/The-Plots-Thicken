@@ -1,7 +1,7 @@
 ---
 title: "Walking a Beagle"
 date: 2024-10-06
-categories: [R, ggplot2, dogs]
+categories: [R, ggplot2]
 image: walk_09_22_24.png
 description: "What it's really like to walk a beagle"
 ---

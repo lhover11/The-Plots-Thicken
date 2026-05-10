@@ -1,7 +1,7 @@
 ---
 title: "Which players survive the longest?"
 date: 2025-03-02
-categories: [R, gglot2, Traitors]
+categories: [R, ggplot2, Traitors]
 image: images/Traitors_Progress_no_name.png
 description: "Which player types surived the longest in Season 1 and 2 of The Traitors?"
 ---

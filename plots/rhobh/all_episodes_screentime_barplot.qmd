@@ -1,7 +1,7 @@
 ---
 title: "RHOBH Total Screen Time"
 date: 2025-03-30
-categories: [R, RHOBH, BravoTV, ggplot2]
+categories: [R, BravoTV, ggplot2]
 image: images/total_screentime_ep1_17.png
 description: "Total Screen time for the ladies of RHOBH"
 ---

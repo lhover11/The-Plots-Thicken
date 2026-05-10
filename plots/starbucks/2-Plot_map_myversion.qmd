@@ -1,7 +1,7 @@
 ---
 title: "Coffee at an airport is a latte more expensive"
 date: 2025-01-07
-categories: [R, data is everywhere]
+categories: [R, Data is everywhere]
 image: images/latte_prices_sbux1.png
 description: "Additional cost of a latte in an airport"
 ---
