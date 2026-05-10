@@ -28,5 +28,11 @@
   },
   "plots/tt-palmtrees/index.qmd": {
     "index.html": "2b6baa41"
+  },
+  "plots/deplaning/index.qmd": {
+    "index.html": "65f5756d"
+  },
+  "plots/gbbo/08-S15_faff_google_Trends.qmd": {
+    "08-S15_faff_google_Trends.html": "ff92a42c"
   }
 }
