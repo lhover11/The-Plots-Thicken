@@ -34,5 +34,11 @@
   },
   "plots/gbbo/08-S15_faff_google_Trends.qmd": {
     "08-S15_faff_google_Trends.html": "ff92a42c"
+  },
+  "plots/gbbo/02-GBBO-ages-per-episode.qmd": {
+    "02-GBBO-ages-per-episode.html": "fc088274"
+  },
+  "plots/MacysParade/parade_weather.qmd": {
+    "parade_weather.html": "96288d84"
   }
 }
