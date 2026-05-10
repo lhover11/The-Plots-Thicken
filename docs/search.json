@@ -130,14 +130,21 @@
     "href": "index.html",
     "title": "\n    The PlotsThicken\n  ",
     "section": "",
-    "text": "Data Visualization Portfolio\n  \n    The PlotsThicken\n  \n  \n    Plotting everyday drama and data\n  \n  View the plots\n\n\n\n  What's here\n  The collection\n\n  \n\n    \n      01\n      Plots\n      All the plots — browse the full collection."
+    "text": "Data Visualization Portfolio\n  \n    The PlotsThicken\n  \n  \n    Plotting everyday drama and data\n  \n  View the plots\n\n\n\n  What's here\n  The collection\n\n  \n\n    \n      01\n      Plots\n      All the plots — browse the full collection.\n    \n\n  \n\n\n\n  Favorites\n  Featured plots\n\n  \n\n    \n      BravoTV · Drama\n      Summer House Scandal\n      A dramatic look at the data behind the drama.\n    \n\n    \n      GBBO · ggplot2\n      Baker Ages in Each Episode\n      Tracking how age plays out across the tent."
   },
   {
     "objectID": "about.html",
     "href": "about.html",
+    "title": "The Plots Thicken",
+    "section": "",
+    "text": "About\n  Name\n\n  \n    By day I'm a senior bioinformatics scientist wrangling genomic data. By night I'm plotting which GBBO baker peaked too early or how much screen time your favorite Housewife actually gets. The Plots Thicken is my little corner of the internet where data viz meets everyday drama — equal parts R code and reality TV receipts.\n  \n\n  Tools & Skills\n\n  \n    R\n    ggplot2\n    Python\n    Quarto\n    tidyverse\n    Canva\n    Adobe Illustrator\n    Tableau ✦ learning"
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
     "title": "Contact",
     "section": "",
-    "text": "I'm a data visualization practitioner who uses R, Python, and D3 to find and communicate stories in data. Get in touch if you'd like to collaborate or just talk charts.\n  \n  \n    \n      Email\n      you@example.com\n    \n    \n      GitHub\n      github.com/yourusername\n    \n    \n      LinkedIn\n      linkedin.com/in/yourprofile"
+    "text": "I'm a bioinformatics scientist who uses primarily R and Python to find stories and patterns in data.\n  \n  \n  \n    Bluesky\n    lhover11.bsky.social\n  \n    \n    \n      GitHub\n      https://github.com/lhover11\n    \n    \n      LinkedIn\n      linkedin.com/in/laura-hover"
   },
   {
     "objectID": "plots/deplaning/index.html#about",

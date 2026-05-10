@@ -1,0 +1,27 @@
+---
+title: "Contact"
+page-layout: article
+---
+
+```{=html}
+<div style="max-width: 540px; padding: 2rem 0;">
+  <p style="font-size: 0.82rem; color: rgba(255,255,255,0.4); line-height: 1.8; margin-bottom: 2rem;">
+    I'm a bioinformatics scientist who uses primarily R and Python to find stories and patterns in data.
+  </p>
+  <div class="contact-links" style="display: flex; flex-direction: column; gap: 0.75rem;">
+  <div style="display: flex; gap: 1rem; align-items: center; font-size: 0.82rem;">
+    <span style="color: rgba(255,255,255,0.25); width: 80px; font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase;">Bluesky</span>
+    <a href="https://bsky.app/profile/lhover11.bsky.social" target="_blank">lhover11.bsky.social</a>
+  </div>
+    </div>
+    <div style="display: flex; gap: 1rem; align-items: center; font-size: 0.82rem;">
+      <span style="color: rgba(255,255,255,0.25); width: 80px; font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase;">GitHub</span>
+      <a href="https://github.com/lhover11" target="_blank">https://github.com/lhover11</a>
+    </div>
+    <div style="display: flex; gap: 1rem; align-items: center; font-size: 0.82rem;">
+      <span style="color: rgba(255,255,255,0.25); width: 80px; font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase;">LinkedIn</span>
+      <a href="https://linkedin.com/in/laura-hover" target="_blank">linkedin.com/in/laura-hover</a>
+    </div>
+  </div>
+</div>
+```

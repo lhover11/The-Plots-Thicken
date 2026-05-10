@@ -14,8 +14,10 @@ website:
         href: index.qmd
       - text: "Plots"
         href: plots/index.qmd
-      - text: "Contact"
+      - text: "About"
         href: about.qmd
+      - text: "Contact"
+        href: contact.qmd
   page-footer:
     background: "#0a0a0f"
     center: "© 2025 The Plots Thicken"
