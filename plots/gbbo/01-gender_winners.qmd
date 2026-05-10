@@ -1,0 +1,19 @@
+---
+title: "GBBO Winners"
+date: 2024-09-30
+categories: [GBBO, Infographic]
+image: images/GBBO_Gender_Barplot.png
+description: "Comparison of GBBO winners by gender"
+---
+
+![](images/GBBO_Gender_Barplot.png){.lightbox width="50%"}
+
+## About
+
+GBBO analysis: Have more men or women won previous series of GBBO?
+It's an even split!  7 men and 7 women have won previous series.  
+On the plot, each cupcake represents 1 baker  
+Plot generated in adobe illustrator
+
+
+

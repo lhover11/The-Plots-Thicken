@@ -3,11 +3,17 @@
     "listing": "/plots/index.html",
     "items": [
       "/plots/summerhouse/index.html",
+      "/plots/myc_lollipop/02-Lollipop_plot_ggplot_myc_v2.html",
       "/plots/deplaning/index.html",
       "/plots/tt-palmtrees/index.html",
+      "/plots/starbucks/2-Plot_map_myversion.html",
       "/plots/gbbo/08-S15_faff_google_Trends.html",
       "/plots/MacysParade/parade_weather.html",
-      "/plots/gbbo/02-GBBO-ages-per-episode.html"
+      "/plots/gbbo/04-Risk_vs_Reward_S15_E10.html",
+      "/plots/gbbo/06-SB-technical_score.html",
+      "/plots/sammy/01-Plot_Walking_Distances_v4.html",
+      "/plots/gbbo/02-GBBO-ages-per-episode.html",
+      "/plots/gbbo/01-gender_winners.html"
     ]
   }
 ]

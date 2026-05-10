@@ -40,5 +40,23 @@
   },
   "plots/MacysParade/parade_weather.qmd": {
     "parade_weather.html": "96288d84"
+  },
+  "plots/gbbo/01-gender_winners.qmd": {
+    "01-gender_winners.html": "875ec4ee"
+  },
+  "plots/gbbo/04-Risk_vs_Reward_S15_E10.qmd": {
+    "04-Risk_vs_Reward_S15_E10.html": "46be27a5"
+  },
+  "plots/gbbo/06-SB-technical_score.qmd": {
+    "06-SB-technical_score.html": "abc6dccf"
+  },
+  "plots/myc_lollipop/02-Lollipop_plot_ggplot_myc_v2.qmd": {
+    "02-Lollipop_plot_ggplot_myc_v2.html": "f305aaa9"
+  },
+  "plots/sammy/01-Plot_Walking_Distances_v4.qmd": {
+    "01-Plot_Walking_Distances_v4.html": "e1ecb7f6"
+  },
+  "plots/starbucks/2-Plot_map_myversion.qmd": {
+    "2-Plot_map_myversion.html": "48621cfe"
   }
 }
