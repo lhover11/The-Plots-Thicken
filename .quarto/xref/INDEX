@@ -58,5 +58,26 @@
   },
   "plots/starbucks/2-Plot_map_myversion.qmd": {
     "2-Plot_map_myversion.html": "48621cfe"
+  },
+  "plots/rhobh/all_episodes_screentime_barplot.qmd": {
+    "all_episodes_screentime_barplot.html": "3697c69a"
+  },
+  "plots/spotify/christmas_songs.qmd": {
+    "christmas_songs.html": "cfd28ad4"
+  },
+  "plots/tidytuesday/pixar_films.qmd": {
+    "pixar_films.html": "e373dda4"
+  },
+  "plots/tidytuesday/pokemon_data.qmd": {
+    "pokemon_data.html": "ec7a2d80"
+  },
+  "plots/tidytuesday/TT_LongBeach_Adoption_Analysis.qmd": {
+    "TT_LongBeach_Adoption_Analysis.html": "e329513e"
+  },
+  "plots/traitors/02-Plot_evidence_per_episode_v2.qmd": {
+    "02-Plot_evidence_per_episode_v2.html": "cf2e059c"
+  },
+  "plots/traitors/03-episode_progression.qmd": {
+    "03-episode_progression.html": "2410d507"
   }
 }

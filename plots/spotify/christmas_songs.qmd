@@ -1,0 +1,19 @@
+---
+title: "Most streamed Christmas songs"
+date: 2024-12-08
+categories: [Data is Everywhere]
+image: images/top_10_spotify_2024_1-5.png
+description: "Top 10 most streamed Christmas songs on Spotify"
+---
+
+![](images/top_10_spotify_2024_1-5.png){.lightbox width="50%"}
+![](images/top_10_spotify_2024_6-10.png){.lightbox width="50%"}
+
+
+## About
+
+Top 10 most streamed Christmas songs on Spotify (in billions of streams)
+Graphics made in canva
+
+
+**Data source:** Spotify
